@@ -42,18 +42,13 @@ int main(){
 Nodo *frente=NULL;
 Nodo *fin =NULL;
 int dato;
+for(int i=0; i<5;i++){
 cout<<"ingrese un numero: "<<endl;
  cin>>dato;
  insertarCola(frente, fin, dato);
- cout<<"ingrese un numero: "<<endl;
- cin>>dato;
- insertarCola(frente, fin, dato);
- cout<<"ingrese un numero: "<<endl;
- cin>>dato;
- insertarCola(frente, fin, dato);
- cout<<"ingrese un numero: "<<endl;
- cin>>dato;
- insertarCola(frente, fin, dato);
+}
+
+ 
 
   cout<<"quitanto los elementos: "<<endl;
 while (frente!=NULL)
