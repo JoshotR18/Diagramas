@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -8,7 +7,7 @@
 </head>
 <body>
     <button id="carga">Cargar</button>
-    <ul>
+    <ul><input type="hidden" maxlength="60" minlength="3" name="matid" id="matid" required placeholder="Ingrese Carrera">
             <li><input type="text" maxlength="60" minlength="3" name="carrera" id="carrera" required placeholder="Ingrese Carrera"></li>
             <li><input type="number"  name="curso" id="curso" placeholder="Ingrese Curso" required></li>
             <li><input type="number" name="semestre" id="semestre" placeholder="Ingrese Semestre" required></li>
@@ -16,14 +15,14 @@
             <li><input type="text" maxlength="60" minlength="3" name="materia" id="materia" required placeholder="Ingrese Carrera"></li>
             <li><input type="date" name="feini"  id="feini" placeholder="Ingrese Carrera" required></li>
             <li><input type="date" name="fefin" id="fefin" placeholder="Ingrese Carrera" required></li>
-            <li ><button id="agregar">Agregar</button><button id="limpiar">Limpiar</button></li>
+            <li ><button id="agregar">Agregar</button><button id="limpiar" type="reset">Limpiar</button></li>
     </ul>
     <ul >
             <li>listar</li>
     </ul>
 <table border="1">
     <thead>
-<tr><th>carrera</th><th>semestre</th><th>curso</th></tr>
+<tr><th>carrera</th><th>semestre</th><th>curso</th><th>matcode</th><th>materia</th><th><a id="btnuevo" colspan="2">Nuevo</a></th></tr>
     </thead>
     <tbody id="lista">
 
